@@ -1,0 +1,21 @@
+scan:
+  listen_secs: 5
+  retries: 3
+  unicast: true
+  concurrency: 256
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: "1234"
+  database: mdns_mapper
+  charset: utf8mb4
+  parse_time: true
+
+server:
+  addr: ":8080"
+
+log:
+  level: info
+  format: console
